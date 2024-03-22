@@ -1,15 +1,9 @@
-package gui;
-
 import java.awt.BorderLayout;
 import java.awt.Container;
-import java.awt.FlowLayout;
-import java.awt.GraphicsConfiguration;
-import java.awt.GridBagLayout;
 import java.awt.GridLayout;
-import java.awt.HeadlessException;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
+import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -142,13 +136,13 @@ public class Ventana extends JFrame implements ActionListener {
 			if(turno) {
 				aux.setName("x");
 				//aux.setText("X");
-				aux.setIcon(new ImageIcon("Tateti\\images\\X.png"));
+				aux.setIcon(new ImageIcon("images\\X.png"));
 				turnoText.setText("Turno Jugador 2");
 			}
 			else {
 				aux.setName("o");
 				//aux.setText("O");
-				aux.setIcon(new ImageIcon("Tateti\\images\\O.png"));
+				aux.setIcon(new ImageIcon("images\\O.png"));
 				turnoText.setText("Turno Jugador 1");
 			}
 			aux.setEnabled(false);
